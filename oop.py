@@ -18,6 +18,10 @@ class Employee:
     def applay_raise(self):
         self.pay = int(self.pay * self.raise_amount)
 
+    @classmethod
+    def set_raise_amt(cls, amount):
+        ...
+
 
 emp_1 = Employee("Alice", "Smith", 60000)
 print(Employee.num_of_emps)
